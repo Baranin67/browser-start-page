@@ -1,0 +1,15 @@
+@use '../colors';
+@use '../variables';
+
+@use '../components/search-bar';
+
+#wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: colors.$black-blue;
+}
