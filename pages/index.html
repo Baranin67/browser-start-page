@@ -8,16 +8,31 @@
 
 	<title>My start page</title>
 
-	<link rel="stylesheet" href="../styles/out/main.css">
+	<link rel="stylesheet" href="../styles/out/global.css">
 	<link rel="stylesheet" href="../styles/out/pages/index.css">
+
+	<script src="../scripts/main.js" defer></script>
 </head>
 
 <body>
 	<div id="wrapper">
+		<noscript>Włącz obsługę JavaScript do poprawnego działania strony.</noscript>
+
 		<div id="search-bar">
-			<button id="change-search-engine-button"></button>
-			<input type="text" name="search_phrase" id="search-input" placeholder="Czego szukasz?">
-			<button id="search-button"></button>
+
+			<button id="change-search-engine-button">
+				<img id="logo" src="../assets/images/duckduckgo-logo.svg" alt="duckduckgo logo">
+			</button>
+
+			<input type="text" name="search_query" id="search-input" placeholder="Czego szukasz?">
+
+			<button id="search-button">
+				<svg id="icon" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M24.649 22.8907L20.0142 18.2907C21.8133 16.0462 22.6845 13.1973 22.4488 10.3298C22.2131 7.46233 20.8883 4.79418 18.7469 2.87401C16.6055 0.953833 13.8102 -0.0724116 10.9358 0.0062889C8.06138 0.0849894 5.32636 1.26265 3.2931 3.29713C1.25983 5.3316 0.082865 8.06825 0.0042112 10.9444C-0.0744426 13.8205 0.951193 16.6174 2.87022 18.7601C4.78926 20.9028 7.45582 22.2283 10.3216 22.4642C13.1874 22.7001 16.0346 21.8283 18.2778 20.0282L22.875 24.6282C22.9912 24.7454 23.1293 24.8384 23.2816 24.9018C23.4338 24.9653 23.5971 24.9979 23.762 24.9979C23.9269 24.9979 24.0902 24.9653 24.2424 24.9018C24.3947 24.8384 24.5328 24.7454 24.649 24.6282C24.8741 24.3951 25 24.0836 25 23.7595C25 23.4353 24.8741 23.1238 24.649 22.8907ZM11.2694 20.0282C9.53987 20.0282 7.84915 19.515 6.41107 18.5536C4.973 17.5921 3.85216 16.2255 3.19028 14.6267C2.52841 13.0278 2.35523 11.2685 2.69265 9.57116C3.03007 7.87383 3.86294 6.31473 5.08592 5.09102C6.3089 3.86731 7.86707 3.03395 9.5634 2.69633C11.2597 2.35871 13.018 2.53199 14.6159 3.19425C16.2138 3.85652 17.5796 4.97803 18.5405 6.41696C19.5014 7.85589 20.0142 9.54761 20.0142 11.2782C20.0142 13.5988 19.0929 15.8244 17.4529 17.4654C15.813 19.1063 13.5887 20.0282 11.2694 20.0282Z" />
+				</svg>
+			</button>
+
 		</div>
 	</div>
 </body>

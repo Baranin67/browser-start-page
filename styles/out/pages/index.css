@@ -1,3 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap");
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  min-width: 300px;
+  height: 50px;
+}
+#search-bar #change-search-engine-button,
+#search-bar #search-button {
+  display: grid;
+  place-items: center;
+  min-width: 50px;
+  border: none;
+  outline: none;
+  background-color: #003566;
+  transition: background-color 0.1s;
+}
+#search-bar #change-search-engine-button:hover, #search-bar #change-search-engine-button:focus-visible,
+#search-bar #search-button:hover,
+#search-bar #search-button:focus-visible {
+  background-color: #004280;
+}
+#search-bar #change-search-engine-button {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#search-bar #change-search-engine-button #logo {
+  width: 75%;
+}
+#search-bar #search-input {
+  width: 100%;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: #003566;
+  color: #EEE;
+  transition: background-color 0.1s;
+}
+#search-bar #search-input:hover, #search-bar #search-input:focus-visible {
+  background-color: #004280;
+}
+#search-bar #search-input::placeholder {
+  font-weight: 300;
+  color: rgba(237, 237, 237, 0.5);
+}
+#search-bar #search-input::-moz-placeholder, #search-bar #search-input::-webkit-placeholder {
+  font-weight: 300;
+  color: #EEE;
+}
+#search-bar #search-button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#search-bar #search-button #icon {
+  width: 20px;
+  fill: rgba(237, 237, 237, 0.75);
+}
+
+* {
+  font-family: "Unbounded", sans-serif;
+}
+
 #wrapper {
   display: flex;
   justify-content: center;
