@@ -17,6 +17,7 @@ $search-bar-height: 50px;
 		place-items: center;
 
 		min-width: $search-bar-height;
+		max-width: $search-bar-height;
 
 		border: none;
 		outline: none;
@@ -34,7 +35,7 @@ $search-bar-height: 50px;
 		border-bottom-left-radius: variables.$border-radius-small;
 
 		#logo {
-			width: 75%;
+			width: 50%;
 		}
 	}
 

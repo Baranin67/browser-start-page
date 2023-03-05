@@ -11,6 +11,7 @@
   display: grid;
   place-items: center;
   min-width: 50px;
+  max-width: 50px;
   border: none;
   outline: none;
   background-color: #003566;
@@ -26,7 +27,7 @@
   border-bottom-left-radius: 5px;
 }
 #search-bar #change-search-engine-button #logo {
-  width: 75%;
+  width: 50%;
 }
 #search-bar #search-input {
   width: 100%;

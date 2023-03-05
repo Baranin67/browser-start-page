@@ -1,0 +1,28 @@
+{
+  "name": "browser-start-page",
+  "version": "1.0.0",
+  "description": "My start page for a webbrowser.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baranin67/browser-start-page.git"
+  },
+  "author": "Mateusz Baranowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baranin67/browser-start-page/issues"
+  },
+  "homepage": "https://github.com/Baranin67/browser-start-page#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "openai": "^3.2.1",
+    "path": "^0.12.7"
+  }
+}
