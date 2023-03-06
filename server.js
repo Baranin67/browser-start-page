@@ -10,6 +10,10 @@ app.use('/images',
     express.static(path.join(__dirname, 'images'),
         { setHeaders: (res, path, stat) => { res.set('Content-type', 'image/png'); } }));
 
+app.use('/configs',
+    express.static(path.join(__dirname, 'configs'),
+        { setHeaders: (res, path, stat) => { res.set('Content-type', 'application/json'); } }));
+
 app.use('/scripts',
     express.static(path.join(__dirname, 'scripts'),
         { setHeaders: (res, path, stat) => { res.set('Content-type', 'application/javascript'); } }));

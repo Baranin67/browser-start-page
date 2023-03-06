@@ -1,0 +1,37 @@
+[
+	{
+		"id": "duckduckgo",
+		"link_pattern": "https://duckduckgo.com/?q=%query%",
+		"searchbar_placeholder": "Szukaj w DuckDuckGo..."
+	},
+	{
+		"id": "google",
+		"link_pattern": "https://www.google.com/search?q=%query%",
+		"searchbar_placeholder": "Szukaj w Google..."
+	},
+	{
+		"id": "youtube",
+		"link_pattern": "https://www.youtube.com/results?search_query=%query%",
+		"searchbar_placeholder": "Szukaj w YouTube..."
+	},
+	{
+		"id": "stack_overflow",
+		"link_pattern": "https://stackoverflow.com/search?q=%query%",
+		"searchbar_placeholder": "Szukaj na Stack Overflow..."
+	},
+	{
+		"id": "wikipedia",
+		"link_pattern": "https://pl.wikipedia.org/wiki/%query%",
+		"searchbar_placeholder": "Szukaj na Wikipedii..."
+	},
+	{
+		"id": "wikiwand",
+		"link_pattern": "https://www.wikiwand.com/pl/%query%",
+		"searchbar_placeholder": "Szukaj na Wikiwand..."
+	},
+	{
+		"id": "wolne_lektury",
+		"link_pattern": "https://wolnelektury.pl/szukaj/?q=%query%",
+		"searchbar_placeholder": "Szukaj na Wolnych Lekturach..."
+	}
+]
