@@ -44,7 +44,7 @@ submitBtn.addEventListener('click', () => {
 });
 
 // Key down listener
-window.addEventListener('keydown', e => e.key === 'Enter' && submitBtn.click());
+window.addEventListener('keyup', e => e.key === 'Enter' && submitBtn.click());
 
 // Change search engine button click listener
 changeSearchEngineBtn.addEventListener('click', () => {
