@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const port = 2137;
+const port = process.env.PORT || 2137;
 const app = express();
 
 app.use('/images',

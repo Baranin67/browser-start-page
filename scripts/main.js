@@ -1,20 +1,26 @@
 import searchEngineList from '../configs/searchEngines.json' assert {type: 'json'};
 
-const searchInput = document.getElementById('search-input');
-const submitBtn = document.getElementById('search-button');
-const changeSearchEngineBtn = document.getElementById('change-search-engine-button');
-const searchEngineLogo = document.getElementById('logo');
+const searchInput = document.querySelector('#search-input');
+const submitBtn = document.querySelector('#search-button');
+const changeSearchEngineBtn = document.querySelector('#change-search-engine-button');
+const searchEngineLogo = document.querySelector('#logo');
 
 const searchEngineLogoPath = '../images/%name%-logo.png';
-
-// Search engine data
 let activeSearchEngineID = 0;
-const getActiveSearchEngine = () => searchEngineList[activeSearchEngineID];
+const getActiveSearchEngineID = () => { return parseInt(window.localStorage.getItem('active-search-engine') || '0'); }
+const updateSearchEngineLocalStorage = () => { return window.localStorage.setItem('active-search-engine', activeSearchEngineID.toString()); }
+const getActiveSearchEngine = () => { return searchEngineList[getActiveSearchEngineID()]; }
+
+const updateSearchBar = () => {
+	searchInput.placeholder = getActiveSearchEngine().searchbar_placeholder;
+	searchEngineLogo.src = searchEngineLogoPath.replace('%name%', getActiveSearchEngine().id);
+	document.title = getActiveSearchEngine().searchbar_placeholder;
+}
 
 // Initial setup
 const init = () => {
-	searchInput.placeholder = getActiveSearchEngine().searchbar_placeholder;
-	document.title = getActiveSearchEngine().searchbar_placeholder;
+	activeSearchEngineID = getActiveSearchEngineID();
+	updateSearchBar();
 	searchInput.focus();
 }
 
@@ -39,9 +45,8 @@ const setupEventListeners = () => {
 			activeSearchEngineID = 0;
 		else activeSearchEngineID++;
 
-		searchInput.placeholder = getActiveSearchEngine().searchbar_placeholder;
-		searchEngineLogo.src = searchEngineLogoPath.replace('%name%', getActiveSearchEngine().id);
-		document.title = getActiveSearchEngine().searchbar_placeholder;
+		updateSearchEngineLocalStorage();
+		updateSearchBar();
 	});
 }
 
